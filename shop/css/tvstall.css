@@ -1,0 +1,185 @@
+input[type="text"], select {
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 14px;
+	width: 160px;
+	margin: 0.2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.btn {
+	display: inline-block;
+	border: 1px solid #33FF33;
+	border-radius: 10px;
+	background: #33CC33;
+	text-decoration: none;
+	color: #FFF;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.open {
+	display: block;
+}
+
+section, .hide {
+	display: none;
+}
+
+section .header, section .content {
+	width: 50%;
+	margin: 0 auto;
+}
+
+section .header .logo, section .header .search-panel, section .header .back {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section .header .search-panel input {
+	margin: 12px 0 12px 20px;
+	width: 420px;
+}
+
+section .header .back {
+	margin-top: 11px;
+	margin-left: 10px;
+}
+
+section .header .back a {
+	display: block;
+	width: 153px;
+	text-align: center;
+}
+
+section .list {
+	overflow-y: auto;
+	max-height: 580px;
+}
+
+section .list .item {
+	background: rgba(255, 255, 255, 0.2);
+	padding: 5px;
+}
+
+section .list .item.item-btn {
+	cursor: pointer;
+}
+
+section .product {
+	border: 1px solid #CCC;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+section .list .item:first-child {
+	margin-top: 0;
+}
+
+section .list .item:last-child {
+	margin-bottom: 0;
+}
+
+section .product .picture, section .product .description {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section .product .picture img {
+	width: 100px;
+}
+
+section .product .description {
+	max-width: 490px;
+}
+
+section .product .description .price {
+	font-weight: bold;
+	margin-left: 270px;
+}
+
+section .product .description .btn.buy {
+	margin-left: 10px;
+}
+
+.content .list .item .description p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.content .list .item.opened .description p {
+	overflow: auto;
+	text-overflow: clip;
+	white-space: normal;
+}
+
+section .reviews .picture, section .reviews .review {
+	display: inline-block;
+	vertical-align: top;
+}
+
+section#search .content .list {
+	height: 560px;
+}
+
+section#product .content .product {
+	height: 500px;
+}
+
+section#search, section#product .content, section#order .content {
+	height: 500px;
+}
+
+section#order .content {
+	border: 1px solid #CCC;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+section#order .content .pay-form, section#order .content .success-msg {
+	margin: 20px;
+}
+
+section#order .content .tab-menu {
+	margin-top: 10px;
+}
+
+section#order .content .tab-menu .tab-menu-item {
+	display: inline-block;
+	vertical-align: top;
+	background: #003366;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 10px;
+}
+
+section#order .content .tab-menu .tab-menu-item.active {
+	background: #3366CC;
+}
+
+section#order .content .tabs .tab {
+	display: none;
+	background: #3366CC;
+	padding: 20px;
+}
+
+section#order .content .tabs .tab.active {
+	display: block;
+}
+
+section#order .content .tabs .nav {
+	background: #3366CC;
+	margin-top: 20px;
+}
+
+section#order .content .tabs .nav a:last-child {
+	float: right;
+}

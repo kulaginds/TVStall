@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; Charset=UTF-8"/>
+    <title>TVStall</title>
+    <link rel="stylesheet" href="css/input.css"/>
+    <link rel="stylesheet" href="css/keyboard.css"/>
+    <link rel="stylesheet" href="css/legend.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tvstall.css"/>
+
+    <script type="text/javascript" src="src/libs/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="src/libs/lodash.compat.min.js"></script>
+    <script type="text/javascript" src="src/libs/event_emitter.js"></script>
+    <script type="text/javascript" src="js/lib/smartbox.js"></script>
+    <script type="text/javascript" src="js/tvstall.js"></script>
+</head>
+<body>
+
+<!--for better view in browser-->
+<div class="bg"></div>
+
+<div class="wrap">
+
+    <section id="search" class="open">
+        <div class="header">
+
+            <div class="logo"></div>
+
+            <div class="search-panel">
+                <form action="#" method="POST">
+                    <input type="text" class="search-query" name="q" placeholder="введите поисковой запрос" value="iphone" />
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div class="list">
+                <div class="item product item-btn">
+                    <div class="picture">
+                        <img src="img/2502.jpg" alt="Product picture" />
+                    </div>
+                    <div class="description">
+                        <h1>Apple iPhone SE 16gb Space Gray</h1>
+                        <a href="#" class="btn">iStore</a>
+                        <span class="price">30999 руб</span>
+                        <a href="#" class="btn buy">Купить</a>
+                        <p>Представляем iPhone SE — самый мощный 4-дюймовый смартфон в истории. Чтобы создать его, мы взяли за основу полюбившийся дизайн и полностью поменяли содержание. Установили тот же передовой процессор A9, что и на iPhone 6s, и камеру 12 Мп для съёмки невероятных фотографий и видео 4K. А благодаря Live Photos любой ваш снимок буквально оживёт. Результат? Небольшой iPhone с огромными возможностями</p>
+                    </div>
+                </div>
+                <div class="item product item-btn">
+                    <div class="picture">
+                        <img src="img/2833.jpg" alt="Product picture" />
+                    </div>
+                    <div class="description">
+                        <h1>Apple iPhone 7 Plus 32gb Rose Gold</h1>
+                        <a href="#" class="btn">iStore</a>
+                        <span class="price">66999 руб</span>
+                        <a href="#" class="btn buy">Купить</a>
+                        <p>В iPhone 7 Plus все важнейшие аспекты iPhone значительно улучшены. Это принципиально новая система камер для фото- и видеосъёмки. Максимально мощный и экономичный аккумулятор iPhone. Стереодинамики с богатым звучанием. Самый яркий и разноцветный из всех дисплеев iPhone. Защита от брызг и воды. И его внешние данные впечатляют не менее, чем внутренние возможности. Всё это iPhone 7 Plus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order">
+        <div class="header">
+
+            <div class="back"><a href="#" class="btn">Поиск</a></div>
+
+            <div class="search-panel">
+                <form action="#" method="POST">
+                    <input type="text" class="search-query" name="q" placeholder="введите поисковой запрос" value="iphone" />
+                </form>
+            </div>
+        </div>
+        <div class="content">
+            <div class="pay-form">
+                <h1>Покупка <span class="product-name">Название товара</span></h1>
+                <div class="tab-menu">
+                    <a href="#" class="tab-menu-item" data-tab-name="cost-tab">Стоимость и скидки</a><a href="#" class="tab-menu-item" data-tab-name="delivery-tab">Доставка</a><a href="#" class="tab-menu-item" data-tab-name="payment-tab">Оплата</a>
+                </div>
+                <div class="tabs">
+                    <div class="tab" id="cost-tab">
+                        <p>К оплате: <b class="price">50</b> рублей.</p>
+                        <p class="coupon">Действует скидка: <b>Название скидки - 10%</b>.</p>
+                        <h3>Скидки и купоны</h3>
+                        <form action="#" id="coupon_form">
+                            <label for="coupon">Если у вас есть код скидки или купон, введите его ниже:</label><br>
+                            <input type="text" name="coupon" id="coupon" />
+                            <input type="submit" class="btn" value="OK" />
+                        </form>
+                        <div class="nav">
+                            <a href="#" class="btn cancel">Отмена</a>
+                            <a href="#" class="btn next">Далее</a>
+                        </div>
+                    </div>
+                    <div class="tab" id="delivery-tab">
+                        <form action="#">
+                            <table>
+                                <tr>
+                                    <td align="right"><label for="country">Страна:</label></td>
+                                    <td>
+                                        <select name="country" id="country">
+                                            <option value="1">Россия</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="region">Область:</label></td>
+                                    <td>
+                                        <select name="region" id="region">
+                                            <option value="1">Республика Крым</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="city">Город:</label></td>
+                                    <td>
+                                        <select name="city" id="city">
+                                            <option value="1">Симферополь</option>
+                                            <option value="2">Севастополь</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="street">Улица:</label></td>
+                                    <td>
+                                        <select name="street" id="street">
+                                            <option value="1">Университетская</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="house">Дом:</label></td>
+                                    <td><input type="text" name="house" id="house" /></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="apartment">Квартира:</label></td>
+                                    <td><input type="text" name="apartment" id="apartment" /></td>
+                                </tr>
+                            </table>
+                        </form>
+                        <div class="nav">
+                            <a href="#" class="btn cancel">Отмена</a>
+                            <a href="#" class="btn back">Назад</a>
+                            <a href="#" class="btn next">Далее</a>
+                        </div>
+                    </div>
+                    <div class="tab" id="payment-tab">
+                        <p>К оплате: <b class="price">50</b> рублей.</p>
+                        <form action="#" target="_blank" id="pay_form">
+                            <input type="submit" name="provider" class="btn" value="Яндекс.Деньги" />
+                            <input type="submit" name="provider" class="btn" value="WebMoney" />
+                            <input type="submit" name="provider" class="btn" value="QIWI" />
+                        </form>
+                        <div class="nav">
+                            <a href="#" class="btn cancel">Отмена</a>
+                            <a href="#" class="btn back">Назад</a>
+                            <a href="#" class="btn finish">Завершить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="success-msg hide">
+                <h1>Спасибо за покупку!</h1>
+                <p>В ближайшее время с вам свяжется менеджер для уточнения информации.</p>
+                <a href="#" class="btn">Поиск</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+</body>
+</html>
