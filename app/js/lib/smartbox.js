@@ -675,9 +675,9 @@
           'top': top - kh - h
         })
       }
-      if ( o.left + kw > 1280 ) {
+      if ( o.left + kw > 1920 ) {
         $keyboardPopup.css({
-          'left': 1280 - kw - 20
+          'left': 1920 - kw - 20
         })
       }
       $$voice.save();
@@ -2448,8 +2448,8 @@ $(function () {
                             $('body').append('<div id="subtitles_view" style="position: absolute; z-index: 1;"><div id="subtitles_text"></div></div>');
                             $subtitiles = $('#subtitles_view');
                             $subtitiles.css({
-                                width: '1280px',
-                                height: '720px',
+                                width: '1920px',
+                                height: '1080px',
                                 left: '0px',
                                 top: '0px'
                             });
@@ -2929,8 +2929,8 @@ SB.readyForPlatform('browser', function () {
     Player.extend({
         _init: function () {
             var self = this;
-            var ww = 1280;
-            var wh = 720;
+            var ww = 1920;
+            var wh = 1080;
 
 
             this.$video_container = $('<video id="smart_player" style="position: absolute; left: 0; top: 0;width: ' + ww + 'px; height: ' + wh + 'px;"></video>');
@@ -3214,7 +3214,7 @@ SB.readyForPlatform('lg', function () {
         updateDelay: 500,
         _init: function () {
             var self = this;
-            $('body').append('<object type="video/mp4" data="" width="1280" height="720" id="pluginPlayer" style="z-index: 0; position: absolute; left: 0; top: 0;"></object>');
+            $('body').append('<object type="video/mp4" data="" width="1920" height="1080" id="pluginPlayer" style="z-index: 0; position: absolute; left: 0; top: 0;"></object>');
             this.plugin = $('#pluginPlayer')[0];
             this.$plugin = $(this.plugin);
             this.plugin.onPlayStateChange = function () {
@@ -3422,7 +3422,7 @@ SB.readyForPlatform('mag', function () {
     Player.extend({
         _init: function () {
             stb.InitPlayer();
-            stb.SetViewport(1280, 720, 0, 0);
+            stb.SetViewport(1920, 1080, 0, 0);
             stb.SetTopWin(0);
         },
         _play: function (options) {
@@ -3530,7 +3530,7 @@ SB.readyForPlatform('mag', function () {
             stb = window.gSTB;
 
             window.moveTo(0, 0);
-            window.resizeTo(1280, 720);
+            window.resizeTo(1920, 1080);
 
             SB(function () {
               var $body = $(document.body);
@@ -3667,7 +3667,7 @@ SB.readyForPlatform('philips', function () {
     Player.extend({
         _init: function () {
             $('body').append('<div id="mediaobject" style="position:absolute;left:0px;top:0px;width:640px;height:480px;">\n\
-              <object id="videoPhilips" type="video/mpeg4" width="1280" height="720" />\n\
+              <object id="videoPhilips" type="video/mpeg4" width="1920" height="1080" />\n\
                </div>');
             video = document.getElementById('videoPhilips');
             video.onPlayStateChange = checkPlayState;
@@ -3846,7 +3846,7 @@ SB.readyForPlatform('samsung', function () {
             var self = this;
             //document.body.onload=function(){
             if (self.usePlayerObject) {
-                //self.$plugin = $('<object id="pluginPlayer" border=0 classid="clsid:SAMSUNG-INFOLINK-PLAYER" style="position: absolute; left: 0; top: 0; width: 1280px; height: 720px;"></object>');
+                //self.$plugin = $('<object id="pluginPlayer" border=0 classid="clsid:SAMSUNG-INFOLINK-PLAYER" style="position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;"></object>');
                 self.plugin = document.getElementById('pluginPlayer');
                 $('body').append(self.$plugin);
 

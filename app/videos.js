@@ -4,7 +4,7 @@
     window.App.videos = [
         {
             title: 'Elephants Dream',
-            url: 'https://archive.org/download/ElephantsDream_628/ElephantsDream_720p_DivXPlus_512kb.mp4',
+            url: 'https://archive.org/download/ElephantsDream_628/ElephantsDream_1080p_DivXPlus_512kb.mp4',
             type: 'vod'
         },
         {

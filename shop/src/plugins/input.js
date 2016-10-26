@@ -379,9 +379,9 @@
           'top': top - kh - h
         })
       }
-      if ( o.left + kw > 1280 ) {
+      if ( o.left + kw > 1920 ) {
         $keyboardPopup.css({
-          'left': 1280 - kw - 20
+          'left': 1920 - kw - 20
         })
       }
       $$voice.save();

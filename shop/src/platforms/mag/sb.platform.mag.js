@@ -55,7 +55,7 @@
       stb.EnableVKButton(false);
 
       window.moveTo(0, 0);
-      window.resizeTo(1280, 720);
+      window.resizeTo(1920, 1080);
 
       SB(function () {
         var $body = $(document.body);

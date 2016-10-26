@@ -36,7 +36,7 @@ SB.readyForPlatform('samsung', function () {
             var self = this;
             //document.body.onload=function(){
             if (self.usePlayerObject) {
-                //self.$plugin = $('<object id="pluginPlayer" border=0 classid="clsid:SAMSUNG-INFOLINK-PLAYER" style="position: absolute; left: 0; top: 0; width: 1280px; height: 720px;"></object>');
+                //self.$plugin = $('<object id="pluginPlayer" border=0 classid="clsid:SAMSUNG-INFOLINK-PLAYER" style="position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;"></object>');
                 self.plugin = document.getElementById('pluginPlayer');
                 $('body').append(self.$plugin);
 

@@ -40,7 +40,7 @@ SB.readyForPlatform('dune', function () {
 
     Player.extend({
         _init: function () {
-            //stb.SetViewport(1280, 720, 0, 0);
+            //stb.SetViewport(1920, 1080, 0, 0);
             //stb.SetTopWin(0);
         },
         _play: function (options) {

@@ -69,7 +69,7 @@ SB.readyForPlatform('philips', function () {
     Player.extend({
         _init: function () {
             $('body').append('<div id="mediaobject" style="position:absolute;left:0px;top:0px;width:640px;height:480px;">\n\
-              <object id="videoPhilips" type="video/mpeg4" width="1280" height="720" />\n\
+              <object id="videoPhilips" type="video/mpeg4" width="1920" height="1080" />\n\
                </div>');
             video = document.getElementById('videoPhilips');
             video.onPlayStateChange = checkPlayState;

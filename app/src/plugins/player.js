@@ -331,8 +331,8 @@
                             $('body').append('<div id="subtitles_view" style="position: absolute; z-index: 1;"><div id="subtitles_text"></div></div>');
                             $subtitiles = $('#subtitles_view');
                             $subtitiles.css({
-                                width: '1280px',
-                                height: '720px',
+                                width: '1920px',
+                                height: '1080px',
                                 left: '0px',
                                 top: '0px'
                             });
