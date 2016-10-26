@@ -23,10 +23,12 @@ $(document).ready(function() {
 		$("#order .content .pay-form").removeClass("hide");
 		$("#order .content .success-msg").addClass("hide");
 
-		var price = $(current_product).find(".description span.price").html();
+		var price = $(current_product).find(".description span.price").html(),
+			product_name = $(current_product).find(".description h1").html();
 
 		$("#cost-tab p b.price").html(price);
 		$("#payment-tab p b.price").html(price);
+		$("#order .content .pay-form h1 .product-name").html(product_name);
 	}
 
 	function showTab(name) {

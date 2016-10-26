@@ -42,7 +42,7 @@ section .header .logo, section .header .search-panel, section .header .back {
 
 section .header .search-panel input {
 	margin: 12px 0 12px 20px;
-	width: 420px;
+	width: 730px;
 }
 
 section .header .back {
@@ -96,12 +96,16 @@ section .product .picture img {
 }
 
 section .product .description {
-	max-width: 490px;
+	max-width: 820px;
+}
+
+section .product .description h1 {
+	margin-bottom: 10px;
 }
 
 section .product .description .price {
 	font-weight: bold;
-	margin-left: 270px;
+	margin-left: 600px;
 }
 
 section .product .description .btn.buy {
