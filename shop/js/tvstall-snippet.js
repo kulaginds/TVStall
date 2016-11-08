@@ -11,7 +11,7 @@ $(document).ready(function() {
 						.html("TVStall: ")
 						.append(
 							$("<a />")
-								.attr("href", "https://scorpio3.ru/sandbox/0C9D8C121D169830FFC573279EAEF401/index.html")
+								.attr("href", "../shop/")
 								.html("Купите Apple iPhone уже сегодня!")
 						)
 				)
