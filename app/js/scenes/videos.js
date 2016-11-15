@@ -37,6 +37,7 @@
         type: e.currentTarget.getAttribute('data-type')
       });
       addAdv("smart_player");
+      window.App.toggleView();
     },
 
     // showing items from videos.js
