@@ -45,19 +45,23 @@ section .header .logo, section .header .search-panel, section .header .back {
 	vertical-align: top;
 }
 
-section .header .search-panel input {
-	margin: 12px 0 12px 20px;
-	width: 460px;
+section .header .logo, section .header .back {
+	width: 22%;
+	margin: 10px 0 20px 15px;
 }
 
-section .header .back {
-	margin-top: 11px;
-	margin-left: 10px;
+section .header .search-panel {
+	width: 74%;
+}
+
+section .header .search-panel input {
+	margin: 12px 0;
+	width: 95%;
+	float: right;
 }
 
 section .header .back a {
 	display: block;
-	width: 153px;
 	text-align: center;
 }
 
@@ -96,25 +100,35 @@ section .product .picture, section .product .description {
 	vertical-align: top;
 }
 
+section .product .picture {
+	width: 16%;
+}
+
 section .product .picture img {
 	width: 100px;
 }
 
 section .product .description {
-	max-width: 550px;
+	/*max-width: 550px;*/
+	width: 82%;
+	padding: 0 0.1rem;
 }
 
 section .product .description h1 {
 	margin-bottom: 10px;
+	width: inherit;
 }
 
 section .product .description .price {
 	font-weight: bold;
-	margin-left: 330px;
+	/*margin-left: 330px;*/
+	float: right;
+	margin-top: 7px;
 }
 
 section .product .description .btn.buy {
 	margin-left: 10px;
+	float: right;
 }
 
 .content .list .item .description p {
@@ -150,7 +164,7 @@ section#order .content {
 	border: 1px solid #CCC;
 	background: rgba(255, 255, 255, 0.4);
 	border-radius: 5px;
-	margin-top: 20px;
+	height: auto;
 }
 
 section#order .content .pay-form, section#order .content .success-msg {
@@ -196,7 +210,7 @@ section#order .content .tabs .nav a:last-child {
 /*------------------
 ---- адаптация -----
 ------------------*/
-@media (min-width: 1920px) {
+/*@media (min-width: 1920px) {
 	section .header .search-panel input {
 		width: 730px;
 	}
@@ -208,4 +222,4 @@ section#order .content .tabs .nav a:last-child {
 	section .product .description .price {
 		margin-left: 600px;
 	}
-}
+}*/

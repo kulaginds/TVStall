@@ -92,24 +92,6 @@ $(document).ready(function() {
 		showSection("search");
 	});
 
-	$("#coupon").SBInput({
-      keyboard: {
-        type: 'fulltext_ru_nums'
-      }
-    });
-
-    $("#house").SBInput({
-      keyboard: {
-        type: 'email'
-      }
-    });
-
-    $("#apartment").SBInput({
-      keyboard: {
-        type: 'email'
-      }
-    });
-
     $("#coupon_form").submit(function(e) {
     	e.preventDefault();
     	alert('Функционал скидок в разработке.');
